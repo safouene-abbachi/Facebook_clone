@@ -41,7 +41,7 @@ const userSchema = mongoose.Schema(
       type: String,
       required: [true, 'password  is required'],
       minlength: [4, 'Password must be at least 4 characters long'],
-      maxLength: 40,
+      maxLength: 60,
       trim: true,
       validate: {
         validator: (value) => validatePassword(value),
